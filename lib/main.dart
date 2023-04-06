@@ -1,3 +1,5 @@
+import 'package:cupertion_app/model_popup.dart';
+import 'package:cupertion_app/navbar.dart';
 import 'package:flutter/cupertino.dart';
 
 void main() {
@@ -9,16 +11,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const CupertinoApp(
+    return CupertinoApp(
       debugShowCheckedModeBanner: false,
-      theme: CupertinoThemeData(
+      theme: const CupertinoThemeData(
           brightness: Brightness.dark,
           primaryColor: CupertinoColors.systemOrange),
       home: CupertinoPageScaffold(
-        navigationBar: CupertinoNavigationBar(
-          middle: Text("Flutter Cupertion"),
-        ),
-        child: SizedBox(),
+        navigationBar: cNavbar(),
+        child: const ModelPopup(),
       ),
     );
   }
