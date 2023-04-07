@@ -1,5 +1,5 @@
-import 'package:cupertion_app/date_picker.dart';
 import 'package:cupertion_app/navbar.dart';
+import 'package:cupertion_app/page_route.dart';
 import 'package:flutter/cupertino.dart';
 
 void main() {
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           primaryColor: CupertinoColors.systemOrange),
       home: CupertinoPageScaffold(
         navigationBar: cNavbar(),
-        child: const DataPicker(),
+        child: const PageRoutes(),
       ),
     );
   }
