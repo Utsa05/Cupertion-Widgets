@@ -1,4 +1,5 @@
 import 'package:cupertion_app/button.dart';
+import 'package:cupertion_app/context_menu.dart';
 import 'package:cupertion_app/navbar.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
           primaryColor: CupertinoColors.systemOrange),
       home: CupertinoPageScaffold(
         navigationBar: cNavbar(),
-        child: const Button(),
+        child: const ContextMene(),
       ),
     );
   }
